@@ -26,7 +26,7 @@ plot(Times1,select.data$Voltage,type="l",ylab="Voltage",xlab="datetime")
 plot(Times1,select.data$Sub_metering_1,type="l",ylab="Energy Sub metering",xlab="")
 points(Times1,select.data$Sub_metering_2,type="l",col="red")
 points(Times1,select.data$Sub_metering_3,type="l",col="blue")
-legend("topright", c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),lty="solid",col=c("black","red","blue"))
+legend("topright", c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),lty="solid",col=c("black","red","blue"),bty="n")
 ## firth plot
 plot(Times1,select.data$Global_reactive_power,type="l",ylab="Global_reactive_power",xlab="datetime")
 
