@@ -16,7 +16,8 @@ Sys.setlocale("LC_TIME", "English")
                                      
 
 ##Plot 4 frame
-par(mfrow=c(2,2),cex=0.6)
+png("plot4.png", width=480, height=480)
+par(mfrow=c(2,2),cex=0.8)
 
 ## first plot
 plot(Times1,select.data$Global_active_power,type="l",ylab="Global active power(kilowatts)",xlab="")
@@ -29,6 +30,4 @@ points(Times1,select.data$Sub_metering_3,type="l",col="blue")
 legend("topright", c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),lty="solid",col=c("black","red","blue"),bty="n")
 ## firth plot
 plot(Times1,select.data$Global_reactive_power,type="l",ylab="Global_reactive_power",xlab="datetime")
-
-dev.copy(png,file="plot4.png")
 dev.off()

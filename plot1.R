@@ -16,6 +16,6 @@ Sys.setlocale("LC_TIME", "English")
                                      
 
 ##Plot Histogram
+png("plot1.png", width=480, height=480)
 hist(select.data$Global_active_power,col="red",main="Global Active Power",xlab="Global active power(kilowatts)")
-dev.copy(png,file="plot1.png")
 dev.off()
