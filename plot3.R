@@ -17,7 +17,7 @@ Sys.setlocale("LC_TIME", "English")
                                      
 
 ##Plot 
-png("plot3.png", width=480, height=580)
+png("plot3.png", width=480, height=480)
 plot(Times1,select.data$Sub_metering_1,type="l",ylab="Energy Sub metering",xlab="")
 points(Times1,select.data$Sub_metering_2,type="l",col="red")
 points(Times1,select.data$Sub_metering_3,type="l",col="blue")
