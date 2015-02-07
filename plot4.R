@@ -12,6 +12,7 @@ Times1<-strptime(Times,"%d/%m/%Y %H:%M:%S")
 i=0
 for(i in 3:9)
   select.data[,i]<-as.numeric(select.data[,i])
+## set local time as UA because here is Korea.
 Sys.setlocale("LC_TIME", "English")
                                      
 
