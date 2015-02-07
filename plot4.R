@@ -17,7 +17,7 @@ Sys.setlocale("LC_TIME", "English")
                                      
 
 ##Plot 4 frame
-png("plot4.png", width=480, height=480)
+png("plot4.png", width=480, height=580)
 par(mfrow=c(2,2),cex=0.8)
 
 ## first plot

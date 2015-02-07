@@ -12,11 +12,11 @@ Times1<-strptime(Times,"%d/%m/%Y %H:%M:%S")
 i=0
 for(i in 3:9)
   select.data[,i]<-as.numeric(select.data[,i])
-## set local time as UA because here is Korea.
+## set local time as UA because here is Korea..
 Sys.setlocale("LC_TIME", "English")
                                      
 
 ##Plot Histogram
-png("plot1.png", width=480, height=480)
+png("plot1.png", width=480, height=580)
 hist(select.data$Global_active_power,col="red",main="Global Active Power",xlab="Global active power(kilowatts)")
 dev.off()

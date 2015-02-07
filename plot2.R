@@ -17,6 +17,6 @@ Sys.setlocale("LC_TIME", "English")
                                      
 
 ##Plot 
-png("plot2.png", width=480, height=480)
+png("plot2.png", width=480, height=580)
 plot(Times1,select.data$Global_active_power,type="l",ylab="Global active power(kilowatts)",xlab="")
 dev.off()
