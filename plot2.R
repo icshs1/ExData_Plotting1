@@ -1,4 +1,4 @@
-## Read file from original data
+## Read file
 original.data<-read.table("household_power_consumption.txt",sep=";",header=TRUE,dec = ".",stringsAsFactors=FALSE,na.strings = "NA")
 
 ##Select data beween 2007-02-01 and 2007-02-02 
@@ -12,7 +12,6 @@ Times1<-strptime(Times,"%d/%m/%Y %H:%M:%S")
 i=0
 for(i in 3:9)
   select.data[,i]<-as.numeric(select.data[,i])
-## set local time as UA because here is Korea.
 Sys.setlocale("LC_TIME", "English")
                                      
 
